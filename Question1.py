@@ -8,7 +8,7 @@ try:
     bannedFile = open(f"{userBannedList}.txt", "r")
 
 except IOError:
-    print("file not found")
+    print("file not found, please do not write \".txt\"")
 
 except ValueError as exception:
     print("Error:", str(exception))
