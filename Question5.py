@@ -54,8 +54,8 @@ while guesses > 0:
         guesses = guesses - 1
 
 if guesses > 0:
-    print(f"You found the word --> \"{word}\"\nCongratulations! you won")
+    print(f"\nYou found the word --> \"{word}\"\nCongratulations! you won")
 else:
-    print(f"Sorry! you lost.\nThe word is --> \"{word}\"")
+    print(f"\nSorry! you lost.\nThe word is --> \"{word}\"")
 
 
