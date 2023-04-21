@@ -14,10 +14,16 @@ class Bug:
         return self.position
 
 
-bug = Bug(0)
+bug = Bug(5)
 
 bug.move()
 bug.turn()
 bug.move()
 bug.move()
+bug.turn()
+bug.move()
+bug.move()
+bug.move()
+bug.move()
+
 print(bug.getPotition())
