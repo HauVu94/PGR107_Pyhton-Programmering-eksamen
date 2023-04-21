@@ -15,15 +15,24 @@ class Bug:
 
 
 bug = Bug(5)
-
-bug.move()
-bug.turn()
-bug.move()
-bug.move()
-bug.turn()
-bug.move()
-bug.move()
-bug.move()
+print("move once")
 bug.move()
 
-print(bug.getPotition())
+print("turn to the left")
+bug.turn()
+
+print("move twice")
+bug.move()
+bug.move()
+
+print("turn to the right")
+bug.turn()
+
+print("move four times")
+bug.move()
+bug.move()
+bug.move()
+bug.move()
+
+print("expected bug position: 8")
+print(f"actual bug position: {bug.getPotition()}")
