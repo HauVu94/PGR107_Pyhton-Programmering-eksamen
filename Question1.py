@@ -34,4 +34,4 @@ for line in originalText:
 
 newFile = open(f"{newFileName}.txt", "w")
 newFile.write(newText)
-
+newFile.close()
