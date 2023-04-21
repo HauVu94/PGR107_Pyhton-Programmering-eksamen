@@ -41,11 +41,21 @@ while guesses > 0:
     userInput = input("\nGuess a character: ")
 
     if userInput in word:
+        stringPos = 0;
         for element in word:
             if element == userInput:
-                correctGuesses[element.find()]
+                correctGuesses[stringPos] = userInput
+            stringPos = stringPos + 1
+
         correctGuesses[word.find(userInput)] = userInput
-    if "_" not in correctGuesses:
-        print("Its in")
+        if "_" not in correctGuesses:
+            break
+    else:
+        guesses = guesses - 1
+
+if guesses > 0:
+    print(f"You found the word --> \"{word}\"\nCongratulations! you won")
+else:
+    print(f"Sorry! you lost.\nThe word is --> \"{word}\"")
 
 
