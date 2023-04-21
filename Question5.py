@@ -21,8 +21,7 @@ for line in readText:
     for word in line.split():
         wordList.append(word)
 
-word = wordList[random.randrange(0, len(wordList) -1)]
-
+word = wordList[random.randrange(0, len(wordList))]
 
 print(readText)
 print(wordList)
