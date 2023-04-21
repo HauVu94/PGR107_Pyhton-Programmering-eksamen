@@ -24,8 +24,8 @@ def CheckNonOcurringCharacters(sharedCharacters, uniqueCharacters):
                 missingCharacters.append(char)
 
 
-wordOne = input("word one: ")
-wordTwo = input("word two: ")
+wordOne = input("word one: ").lower()
+wordTwo = input("word two: ").lower()
 
 wordOne = set(wordOne)
 wordTwo = set(wordTwo)
