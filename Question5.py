@@ -23,6 +23,29 @@ for line in readText:
 
 word = wordList[random.randrange(0, len(wordList))]
 
-print(readText)
-print(wordList)
-print(word)
+guesses = len(word)
+
+print(f"The word you need to guess has {guesses} characters.")
+
+correctGuesses = []
+
+for char in word:
+    correctGuesses.append("_")
+
+while guesses > 0:
+    print(f"You have now {guesses} guesses.")
+
+    for char in correctGuesses:
+        print(char, end="")
+
+    userInput = input("\nGuess a character: ")
+
+    if userInput in word:
+        for element in word:
+            if element == userInput:
+                correctGuesses[element.find()]
+        correctGuesses[word.find(userInput)] = userInput
+    if "_" not in correctGuesses:
+        print("Its in")
+
+
