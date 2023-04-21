@@ -23,6 +23,8 @@ def CheckNonOcurringCharacters(sharedCharacters, uniqueCharacters):
             if char not in sharedCharacters:
                 missingCharacters.append(char)
 
+    return missingCharacters
+
 
 wordOne = input("word one: ").lower()
 wordTwo = input("word two: ").lower()
@@ -32,7 +34,7 @@ wordTwo = set(wordTwo)
 
 sharedCharacters = CheckIfSharedCharacters(wordOne, wordTwo)
 uniqueCharacters = CheckIfUniqueCharacters(wordOne, wordTwo)
-missingCharacters = []
+missingCharacters = CheckNonOcurringCharacters(sharedCharacters, uniqueCharacters)
 
 sharedCharacters = sorted(sharedCharacters)
 uniqueCharacters = sorted(uniqueCharacters)
