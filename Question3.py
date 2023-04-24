@@ -2,8 +2,6 @@
 def checkPalinedrome(input):
     return input == input[::-1]
 
-
-
 userInput = input("Write in a String: ")
 
 if checkPalinedrome(userInput):
